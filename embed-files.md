@@ -6,7 +6,7 @@
 Например, здесь встроен файл Markdown. Вам нужно только это сделать:
 
 ```markdown
-[filename](_media/example.md ':include')
+[filename](../_media/example.md ':include')
 ```
 
 Тогда содержимое `example.md` будет отображаться непосредственно здесь
@@ -32,7 +32,7 @@
 Конечно, вы можете принудительно указать тип. Например, вам нужно, чтобы файл Markdown был встроен в кодовый блок.
 
 ```markdown
-[filename](_media/example.md ':include :type=code')
+[filename](../_media/example.md ':include :type=code')
 ```
 
 Вы получите это
@@ -56,7 +56,7 @@
 Встраивая любой тип исходного кода, вы можете указать выделенный язык или он будет автоматически идентифицирован.
 
 ```markdown
-[](_media/example.html ':include :type=code text')
+[](../_media/example.html ':include :type=code text')
 ```
 
 ⬇️
