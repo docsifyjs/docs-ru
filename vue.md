@@ -1,6 +1,6 @@
 # Совместимость с Vue
 
-Вы можете писать компоненты Vue непосредственно для файлов Markdown, и он будет проанализирован. Вы можете использовать эту функцию для совместной работы vue demo и документации.
+Вы можете писать компоненты Vue непосредственно в файлах Markdown, и он будет исполнен. Вы можете использовать эту возможность для написания примеров на Vue и документации совместно.
 
 ## Основное использование
 
@@ -10,20 +10,20 @@
 <script src="//unpkg.com/vue"></script>
 <script src="//unpkg.com/docsify"></script>
 
-<!-- или использовать сжатые файлы -->
+<!-- Или использовать минифицированные версии файлов -->
 <script src="//unpkg.com/vue/dist/vue.min.js"></script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
 
-Затем вы можете сразу же написать код Vue в файле Markdown. 
-`new Vue({ el: '#main' })` скрипт выполняется по умолчанию для создания экземпляра.
+Затем вы можете сразу же написать Vue-код в файле Markdown. 
+Выражение `new Vue({ el: '#main' })` выполнится по умолчанию для создания экземпляра.
 
 *README.md*
 
 ````markdown
-# Vue руководство
+# Руководство по Vue
 
-использование `v-for`.
+Использование `v-for`.
 
 ```html
 <ul>
@@ -41,7 +41,7 @@
 *README.md*
 
 ```markdown
-# Vue demo
+# Пример на Vue
 
 <div>Привет {{ msg }}</div>
 
@@ -53,24 +53,24 @@
 </script>
 ```
 
-!> В файле Markdown выполняется скрипт только в первом тёге скрипта.
+!> В файле Markdown выполняется скрипт только в первом теге скрипта.
 
-## Комбинация Vuep для создания playground
+## Комбинация Vuep для создания площадки кода
 
-[Vuep](https://github.com/QingWei-Li/vuep) является компонентом для рендеринга компонентов Vue с живым редактором и предварительным просмотром. Поддерживает спецификацию компонентов Vue и JSX.
+[Vuep](https://github.com/QingWei-Li/vuep) — компонент для отрисовки компонентов Vue с редактором в режиме реального времени без перезагрузки страницы и с предварительным просмотром. Поддерживает спецификацию компонентов Vue и JSX.
 
 *index.html*
 
 ```html
-<!-- внедрить css файл -->
+<!-- Подключить файл CSS -->
 <link rel="stylesheet" href="//unpkg.com/vuep/dist/vuep.css">
 
-<!-- внедрить javascript файлы -->
+<!-- Подключить файлы JavaScript -->
 <script src="//unpkg.com/vue"></script>
 <script src="//unpkg.com/vuep"></script>
 <script src="//unpkg.com/docsify"></script>
 
-<!-- или использовать сжатые файлы -->
+<!-- Или использовать минифицированные версии файлов -->
 <script src="//unpkg.com/vue/dist/vue.min.js"></script>
 <script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -97,6 +97,6 @@
 </script>
 ```
 
-?> Ссылка на экземпляр [vuep documentation](https://qingwei-li.github.io/vuep/).
+?> Пример опирается на [документацию Vuep](https://qingwei-li.github.io/vuep/).
 
 
